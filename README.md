@@ -1,27 +1,14 @@
-# TalanAcademy
+Activité 6.2.3
+Description	
+Nous souhaitons créer une application Talan Academy qui gère les cursus et les apprentis associés à chaque cursus. Pour cela
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.3.
+1- Créer une nouvelle application TalanAcademy avec Angular CLI
+2- Créer un premier composant header. Vous ajouterez une barre de navigation qui contient à droite le logo (Talan Academy), et deux liens (non fonctionnels pour le moment) Cursus, et Apprentis.
 
-## Development server
+3- Nous allons Nous focaliser sur la liste des cursus. Créer les composants ListeCursus et DetailCursus.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Un cursus est caractérisé par un nom, une description, une image (url de type string), et des mots clés (string)
 
-## Code scaffolding
+Dans l'interface principale sont affichés les cursus disponibles ayant une image (affichage du nom en majuscule et de l'image //vous mettrez des urls) triés par ordre alphabétique. Quand on clique sur l'image d'un cursus, seront affichées à droite la description et les mots clés.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Vous utiliserez bootstrap
