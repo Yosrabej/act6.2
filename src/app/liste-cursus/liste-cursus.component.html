@@ -1,0 +1,22 @@
+<p>liste-cursus</p>
+
+  <div class="container"><div class="row"><div class="col-sm">
+    <div  class="cur" *ngFor="let a of lcursus | order:['nom']" style="margin-bottom: 30px; border:solid; padding: 10px 10px 10px 10px; width: 230px">
+        Nom: {{a.nom | uppercase }}
+     <img src="{{a.image}}" style="width: 100px; " (click)="onSelect(a)">
+    </div>
+  </div><div class="col-sm">
+ 
+  </div><div class="col-sm">
+    <div *ngIf="selectedCursus" style="border:solid; width: 300px; height:500px; margin-top: 0px; ">
+
+        <h2>{{selectedCursus.nom | uppercase}} Details</h2>
+        <div><img src="{{selectedCursus.image}}" style="width: 100px; "/></div>
+        <div><span>Description: </span>{{selectedCursus.description}}</div>
+        <br>
+        <div><span>Mots-clés: </span>{{selectedCursus.motsCles}}</div>
+        <br>
+        
+      </div>
+    
+  </div></div></div>
